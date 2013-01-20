@@ -1,0 +1,155 @@
+{
+    "type": "controller",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "Task"
+    },
+    "id": "ExtBox1-ext-gen14046",
+    "designerId": "9e01d070-bc49-4766-b4b8-71b188e24549",
+    "cn": [
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "mainView",
+                "ref": "mainView",
+                "selector": "#Main"
+            },
+            "designerId": "4f8012a0-11a3-49a0-ac49-1cfce0d59b17"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "taskForm",
+                "ref": "taskForm",
+                "selector": "#TaskForm"
+            },
+            "designerId": "61070bec-e64c-4395-be7b-7cb4f3268d14"
+        },
+        {
+            "type": "controllerref",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "taskList",
+                "ref": "taskList",
+                "selector": "#TaskList"
+            },
+            "designerId": "0abf4824-ee7a-46bc-b813-5e51b020516a"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onListItemTap",
+                "fn": "onListItemTap",
+                "implHandler": [
+                    "var form = Ext.create(\"MyApp.view.TaskForm\",\r",
+                    "                      {\r",
+                    "                          title: record.data.TicklerID\r",
+                    "                      });\r",
+                    "\r",
+                    "this.getMainView().push(form);\r",
+                    "\r",
+                    "form.setRecord(record)};\r",
+                    "}\r",
+                    "    "
+                ],
+                "name": "itemtap",
+                "designer|targetType": "Ext.dataview.List",
+                "designer|controlQuery": "#TaskList"
+            },
+            "designerId": "072b7c74-a832-48d9-b1f4-f23a944b0916"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onSave",
+                "fn": "onSave",
+                "implHandler": [
+                    "var me = this;\r",
+                    "var form = this.getTaskForm();\r",
+                    "var values = form.getVaules();\r",
+                    "var record = form.getRecord();\r",
+                    "\r",
+                    "record.set(values);\r",
+                    "\r",
+                    "if (record.isValid()) {\r",
+                    "    record.save({\r",
+                    "        success: function()\r",
+                    "                {\r",
+                    "                me.getMainView().pop();\r",
+                    "                me.getTaskList().deselectALL();\r",
+                    "                }\r",
+                    "}};\r",
+                    "\r",
+                    "}\r",
+                    "    else\r",
+                    "        Ext.Msg.alert(\"Error\", \"There are errors with the record!\");\r",
+                    "}\r",
+                    "    "
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "[action=save]"
+            },
+            "designerId": "77b07db8-a642-489b-87d9-135241865232"
+        },
+        {
+            "type": "controlleraction",
+            "reference": {
+                "name": "listeners",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "onDelete",
+                "fn": "onDelete",
+                "implHandler": [
+                    "var me = this;\r",
+                    "var form = this.getTaskForm();\r",
+                    "var record = form.getRecord();\r",
+                    "\r",
+                    "record.erase({\r",
+                    "    success: function()\r",
+                    "    {\r",
+                    "        record.stores[0].remove(record);\r",
+                    "        me.getMainView().pop();\r",
+                    "    }\r",
+                    "});\r",
+                    "\r",
+                    "    "
+                ],
+                "name": "tap",
+                "designer|targetType": "Ext.Button",
+                "designer|controlQuery": "[action=delete]"
+            },
+            "designerId": "5e8809b6-6911-46cc-b748-3124bf4d699a"
+        }
+    ]
+}

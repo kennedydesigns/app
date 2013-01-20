@@ -1,0 +1,86 @@
+{
+    "name": "app",
+    "settings": {
+        "urlPrefix": "http://localhost/TSP/app/",
+        "spacesToIndent": 4,
+        "exportPath": "C:/Users/MPK-TSP/Documents/Visual Studio 2010/Projects/TSP/TSP/app",
+        "sdkPath": "",
+        "lineEnding": "CRLF",
+        "genTimestamps": false,
+        "cacheBust": false
+    },
+    "xdsVersion": "2.1.0",
+    "xdsBuild": 678,
+    "schemaVersion": 1,
+    "upgradeVersion": 210000000498,
+    "framework": "touch21",
+    "topInstanceFileMap": {
+        "f5825425-baff-4405-977c-556c7f3fde4c": {
+            "paths": [
+                "metadata/view/MyNavigationView",
+                "app/view/override/MyNavigationView.js",
+                "app/view/MyNavigationView.js"
+            ],
+            "className": "MyNavigationView"
+        },
+        "f0bb9a35-16fc-46ff-90b0-b5f6b4153259": {
+            "paths": [
+                "metadata/view/TaskForm",
+                "app/view/override/TaskForm.js",
+                "app/view/TaskForm.js"
+            ],
+            "className": "TaskForm"
+        },
+        "f4ae0662-84b1-434e-9623-2191796fd40a": {
+            "paths": [
+                "metadata/store/Tasks",
+                "app/store/override/Tasks.js",
+                "app/store/Tasks.js"
+            ],
+            "className": "Tasks"
+        },
+        "9e01d070-bc49-4766-b4b8-71b188e24549": {
+            "paths": [
+                "metadata/controller/Task",
+                "app/controller/override/Task.js",
+                "app/controller/Task.js"
+            ],
+            "className": "Task"
+        },
+        "20abe4a8-76a1-4241-afb2-fdfac0a78a9e": {
+            "paths": [
+                "metadata/model/ModelTask",
+                "app/model/override/ModelTask.js",
+                "app/model/ModelTask.js"
+            ],
+            "className": "ModelTask"
+        },
+        "cfdf1a55-0e4d-4928-b9c8-ee8371d8c068": {
+            "paths": [
+                "metadata/resource/Library"
+            ],
+            "className": "Library"
+        }
+    },
+    "viewOrderMap": {
+        "view": [
+            "f5825425-baff-4405-977c-556c7f3fde4c",
+            "f0bb9a35-16fc-46ff-90b0-b5f6b4153259"
+        ],
+        "store": [
+            "f4ae0662-84b1-434e-9623-2191796fd40a"
+        ],
+        "controller": [
+            "9e01d070-bc49-4766-b4b8-71b188e24549"
+        ],
+        "model": [
+            "20abe4a8-76a1-4241-afb2-fdfac0a78a9e"
+        ],
+        "resource": [
+            "cfdf1a55-0e4d-4928-b9c8-ee8371d8c068"
+        ],
+        "app": [
+            "application"
+        ]
+    }
+}

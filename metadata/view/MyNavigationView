@@ -1,0 +1,50 @@
+{
+    "type": "navigationview",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "MyNavigationView",
+        "designer|initialView": true,
+        "id": "Main"
+    },
+    "id": "ExtBox1-ext-gen5550",
+    "designerId": "f5825425-baff-4405-977c-556c7f3fde4c",
+    "cn": [
+        {
+            "type": "list",
+            "reference": {
+                "name": "items",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "title": "Tasks",
+                "designer|userClassName": "MyList",
+                "id": "TaskList",
+                "store": "Tasks"
+            },
+            "designerId": "c3007d0a-5372-4503-91d9-0cc3e380d7fa",
+            "cn": [
+                {
+                    "type": "template",
+                    "reference": {
+                        "name": "itemTpl",
+                        "type": "object"
+                    },
+                    "codeClass": null,
+                    "userConfig": {
+                        "designer|userClassName": "itemTpl",
+                        "implHandler": [
+                            "<div> {TicklerID} :: {DueDate}</div>"
+                        ],
+                        "designer|displayName": "itemTpl"
+                    },
+                    "designerId": "43401c34-1c8d-458e-a2fe-8b4d90f5f1aa"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,201 @@
+{
+    "type": "datamodel",
+    "reference": {
+        "name": "items",
+        "type": "array"
+    },
+    "codeClass": null,
+    "userConfig": {
+        "designer|userClassName": "ModelTask"
+    },
+    "id": "ExtBox1-ext-gen2095",
+    "designerId": "20abe4a8-76a1-4241-afb2-fdfac0a78a9e",
+    "cn": [
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field",
+                "name": "ID",
+                "allowNull": false,
+                "type": "int"
+            },
+            "designerId": "c0722371-c3bc-4485-ad9d-3182100e9c86"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field1",
+                "name": "TicklerID"
+            },
+            "designerId": "ff74ad60-bee4-47fd-ba03-538e09eb2295"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field2",
+                "name": "DueDate",
+                "allowNull": false,
+                "type": "date"
+            },
+            "designerId": "f16239d4-9777-42ab-911b-8c48214f101f"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field3",
+                "name": "AssignedTo"
+            },
+            "designerId": "c2a887e7-ed99-4d39-a55b-def0303509ca"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field4",
+                "name": "SubAssignedTo"
+            },
+            "designerId": "5eda9a5f-15a5-4c0c-a0d2-e7abc166285d"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field5",
+                "name": "CreatedBy"
+            },
+            "designerId": "69f491e7-a7ce-4163-902a-a5468d39cb80"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field6",
+                "name": "Type"
+            },
+            "designerId": "e65c31aa-a629-4b3d-902d-72c7873bc0aa"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field7",
+                "name": "Description"
+            },
+            "designerId": "dda990c5-c7af-4b36-9ad3-5b480aefead9"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field8",
+                "name": "ListID"
+            },
+            "designerId": "86883820-c4d0-4c89-8081-f88b2f616813"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field9",
+                "name": "Completed"
+            },
+            "designerId": "af73472c-e7ce-419f-acd3-c6b67880f4ad"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field10",
+                "name": "Resolution"
+            },
+            "designerId": "138d639d-8997-4801-af95-4d73f42fedcb"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field11",
+                "name": "StartTime"
+            },
+            "designerId": "c366bf31-9721-482f-85fc-058e734817e8"
+        },
+        {
+            "type": "datafield",
+            "reference": {
+                "name": "fields",
+                "type": "array"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "field12",
+                "name": "EndTime"
+            },
+            "designerId": "b514daa4-77a6-43c7-993f-6d5fb2b025b5"
+        },
+        {
+            "type": "restproxy",
+            "reference": {
+                "name": "proxy",
+                "type": "object"
+            },
+            "codeClass": null,
+            "userConfig": {
+                "designer|userClassName": "MyRestProxy",
+                "url": "http://66.177.246.44/TSP/api/Task"
+            },
+            "designerId": "a25450e4-9cb9-448e-b553-415bf3c452d8"
+        }
+    ]
+}
